@@ -14,7 +14,7 @@ const App = () => {
     character?.name?.substring(character?.name?.indexOf(' ')) : character?.name
 
   function getCharacter(id) {
-    fetch(`http://localhost:5000/api/${id}`)
+    fetch(`http://18.222.113.56:5000//api/${id}`)
         .then(response => response.json())
         .then(data => setCharacter(data))
   }

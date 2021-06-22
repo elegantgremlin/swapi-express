@@ -20,7 +20,8 @@ module.exports = {
         species: result.species,
         films: result.films,
       }
-    } catch {
+    } catch(ex) {
+      console.log(ex.message)
       return { 
         name: 'ID Not Found'
       }
